@@ -1,0 +1,38 @@
+{
+  "telegram_offset": 572367824,
+  "chat_id": 8302384986,
+  "next_id": 2,
+  "trackers": [
+    {
+      "id": 1,
+      "url": "https://www.amazon.ae/Apple-MacBook-15-inch-10-core-Unified/dp/B0DZDF7V9J/ref=sr_1_2?crid=4523ATT9OKJW&dib=eyJ2IjoiMSJ9.m5a5y4C0tQv9MvaLpr2NOGEF2bcx9Yizev3m-jz8cw9xR1hT1Srm5omFs75shAi3DFfabnkHKl3g9mi3_3yAeQrrdoEJCHSQhpnEGmbcozE16YzCuKeJGoDNc4ywoP5m8Ir2ni2yyhFaAY7GpaV-c-X2F3CUBcNTQLC6mE2W3vmGXIzExQHVtEEINmASLEXSWFdHKrQ-QmBEY9XrT7G748r-Eb8xgEzjUK8F30wcR6xd1b3a6LCCK7_cFAmh4_0Y44Bw-wqov03j1zfIjpn88VTjpdxSpP5rvrbZrEFluu8.q7Wa7WhzJQVSJ5sLW2rFlWEL9PppGmFO1lYYjcKoFfY&dib_tag=se&keywords=macbook%2B24gb&qid=1783456686&sprefix=%2Caps%2C489&sr=8-2&ufe=app_do%3Aamzn1.fos.b4f74a7b-9d54-420b-9003-7e54957e6f89&th=1",
+      "purpose": "can you track the price of",
+      "type": "price",
+      "name": "Apple MacBook Air M4 15-inch",
+      "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
+      "interval_min": 30,
+      "heartbeat": false,
+      "last_run": 1783456834,
+      "snapshot": {
+        "items": [
+          {
+            "key": "Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English",
+            "value": "AED 5,332.00",
+            "category": "price",
+            "detail": ""
+          },
+          {
+            "key": "Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English List Price",
+            "value": "AED 6,679.00",
+            "category": "price",
+            "detail": "List Price"
+          }
+        ],
+        "summary": "Found 2 price items for 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English'."
+      },
+      "created": 1783456829,
+      "errors": 0
+    }
+  ],
+  "pending": null
+}
