@@ -1,5 +1,5 @@
 {
-  "telegram_offset": 572367824,
+  "telegram_offset": 572367825,
   "chat_id": 8302384986,
   "next_id": 2,
   "trackers": [
@@ -31,7 +31,7 @@
         "summary": "Found 2 prices for Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English."
       },
       "created": 1783456829,
-      "errors": 0
+      "errors": 1
     }
   ],
   "pending": null
