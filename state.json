@@ -12,17 +12,23 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1783519433,
+      "last_run": 1783527267,
       "snapshot": {
         "items": [
           {
-            "key": "Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English",
+            "key": "Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English - Current Price",
             "value": "AED 5,293.46",
             "category": "price",
-            "detail": "List Price: AED 6,679.00"
+            "detail": "Current selling price"
+          },
+          {
+            "key": "Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English - List Price",
+            "value": "AED 6,679.00",
+            "category": "price",
+            "detail": "List Price"
           }
         ],
-        "summary": "Found 1 price for Apple 2025 MacBook Air M4 15-inch."
+        "summary": "Found 2 prices for Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English."
       },
       "created": 1783456829,
       "errors": 0
@@ -36,9 +42,81 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1783504550,
+      "last_run": 1783527328,
       "snapshot": {
         "items": [
+          {
+            "key": "Apple Watch Series 11 GPS + Cellular 46mm Natural Titanium Case with Natural Milanese Loop",
+            "value": "From 615,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Series 11 GPS + Cellular 46mm Natural Titanium Case with Stone Grey Sport Band",
+            "value": "From 576,730 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Series 11 GPS + Cellular 46mm Silver Aluminium Case with Purple Fog Sport Band",
+            "value": "From 407,501 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Series 11 GPS 46mm Space Grey Aluminium Case with Black Sport Band",
+            "value": "From 330,577 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Series 11 GPS 46mm Jet Black Aluminium Case with Black Sport Band",
+            "value": "From 330,577 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Alpine Loop",
+            "value": "From 615,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Titanium Milanese Loop",
+            "value": "From 692,116 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black/Charcoal Trail Loop",
+            "value": "From 615,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Blue/Bright Blue Trail Loop",
+            "value": "From 615,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Natural Titanium Milanese Loop",
+            "value": "From 692,116 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17e",
+            "value": "From 499,808 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "AirPods Max 2",
+            "value": "From 403,655 Rewards",
+            "category": "",
+            "detail": ""
+          },
           {
             "key": "AirPods 4",
             "value": "116,401 Rewards",
@@ -47,7 +125,7 @@
           },
           {
             "key": "iPhone 17 Pro 256GB",
-            "value": "903,654 Rewards",
+            "value": "From 903,654 Rewards",
             "category": "",
             "detail": ""
           },
@@ -59,217 +137,193 @@
           },
           {
             "key": "iPhone 17 256GB",
-            "value": "653,653 Rewards",
+            "value": "From 653,653 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone 17 512GB",
-            "value": "817,116 Rewards",
+            "value": "From 817,116 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone Air 1TB",
-            "value": "1,153,653 Rewards",
+            "value": "From 1,153,653 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone 17 Pro 1TB",
-            "value": "1,230,578 Rewards",
+            "value": "From 1,230,578 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS + Cellular 40mm Midnight Aluminium Case with Midnight Sport Band",
-            "value": "230,576 Rewards",
+            "value": "From 230,576 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS + Cellular 40mm Starlight Aluminium Case with Starlight Sport Band",
-            "value": "230,576 Rewards",
+            "value": "From 230,576 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS + Cellular 44mm Midnight Aluminium Case with Midnight Sport Band",
-            "value": "253,654 Rewards",
+            "value": "From 253,654 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 44mm Midnight Aluminium Case with Midnight Sport Band",
-            "value": "215,191 Rewards",
+            "value": "From 215,191 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 44mm Starlight Aluminium Case with Starlight Sport Band",
-            "value": "215,191 Rewards",
+            "value": "From 215,191 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Gold Titanium Case with Light Blush Sport Band",
-            "value": "538,269 Rewards",
+            "value": "From 538,269 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Jet Black Aluminium Case with Black Sport Band",
-            "value": "384,423 Rewards",
+            "value": "From 384,423 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Rose Gold Aluminium Case with Light Blush Sport Band",
-            "value": "384,423 Rewards",
+            "value": "From 384,423 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 46mm Natural Titanium Case with Natural Milanese Loop",
-            "value": "615,193 Rewards",
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 8‑core GPU 16GB - 512GB SSD - Arabic keyboard",
+            "value": "From 1,057,499 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 46mm Natural Titanium Case with Stone Grey Sport Band",
-            "value": "576,730 Rewards",
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 8‑core GPU 16GB - 512GB SSD - English keyboard",
+            "value": "From 1,057,499 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 46mm Silver Aluminium Case with Purple Fog Sport Band",
-            "value": "407,501 Rewards",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "value": "From 1,470,961 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS 46mm Space Grey Aluminium Case with Black Sport Band",
-            "value": "330,577 Rewards",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,644,038 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS 46mm Jet Black Aluminium Case with Black Sport Band",
-            "value": "330,577 Rewards",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - Arabic keyboard",
+            "value": "From 2,019,039 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Alpine Loop",
-            "value": "615,193 Rewards",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 2TB SSD - English keyboard",
+            "value": "From 2,451,730 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Titanium Milanese Loop",
-            "value": "692,116 Rewards",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 2TB SSD - Arabic keyboard",
+            "value": "From 2,634,424 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black/Charcoal Trail Loop",
-            "value": "615,193 Rewards",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 2TB SSD - English keyboard",
+            "value": "From 2,634,424 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Blue/Bright Blue Trail Loop",
-            "value": "615,193 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Natural Titanium Milanese Loop",
-            "value": "692,116 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17e",
-            "value": "499,808 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "Studio Display XDR - Standard glass - Tilt- and height-adjustable stand",
-            "value": "2,595,961 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "AirPods Max 2",
-            "value": "403,655 Rewards",
+            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 48GB - 1TB SSD - Arabic keyboard",
+            "value": "From 2,922,885 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Silver Aluminium Case with Purple Fog Sport Band",
-            "value": "384,423 Rewards",
+            "value": "From 384,423 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 46mm Space Grey Aluminium Case with Black Sport Band",
-            "value": "407,501 Rewards",
+            "value": "From 407,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 46mm Rose Gold Aluminium Case with Light Blush Sport Band",
-            "value": "407,501 Rewards",
+            "value": "From 407,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 42mm Jet Black Aluminium Case with Black Sport Band",
-            "value": "307,501 Rewards",
+            "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 42mm Rose Gold Aluminium Case with Light Blush Sport Band",
-            "value": "307,501 Rewards",
+            "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 42mm Space Grey Aluminium Case with Black Sport Band",
-            "value": "307,501 Rewards",
+            "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 46mm Rose Gold Aluminium Case with Light Blush Sport Band",
-            "value": "330,577 Rewards",
+            "value": "From 330,577 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone 16e 128GB",
-            "value": "499,807 Rewards",
+            "value": "From 499,807 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone 16e 512GB",
-            "value": "740,192 Rewards",
+            "value": "From 740,192 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone Air 256GB",
-            "value": "826,731 Rewards",
+            "value": "From 826,731 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "iPhone 17 Pro Max 512GB",
-            "value": "1,144,038 Rewards",
+            "value": "From 1,144,038 Rewards",
             "category": "",
             "detail": ""
           },
@@ -287,109 +341,133 @@
           },
           {
             "key": "Apple Watch SE 3 GPS + Cellular 44mm Starlight Aluminium Case with Starlight Sport Band",
-            "value": "253,654 Rewards",
+            "value": "From 253,654 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 40mm Midnight Aluminium Case with Midnight Sport Band",
-            "value": "192,115 Rewards",
+            "value": "From 192,115 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Space Grey Aluminium Case with Black Sport Band",
-            "value": "384,423 Rewards",
+            "value": "From 384,423 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 42mm Natural Titanium Case with Stone Grey Sport Band",
-            "value": "538,269 Rewards",
+            "value": "From 538,269 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "AirPods 4 with Active Noise Cancellation",
-            "value": "144,038 Rewards",
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,317,116 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "AirPods Pro 3",
-            "value": "182,501 Rewards",
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "value": "From 1,317,116 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "iPhone 17 Pro Max 256GB",
-            "value": "980,577 Rewards",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - English keyboard",
+            "value": "From 1,644,038 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "iPhone Air 512GB",
-            "value": "990,192 Rewards",
+            "key": "MacBook Pro 14-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - Arabic keyboard",
+            "value": "From 3,422,885 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "iPhone 17 Pro Max 1TB",
-            "value": "1,307,500 Rewards",
+            "key": "MacBook Pro 14-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - English keyboard",
+            "value": "From 3,422,885 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "iPhone 17 Pro Max 2TB",
-            "value": "1,634,424 Rewards",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 2TB SSD - Arabic keyboard",
+            "value": "From 2,451,730 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "iPhone 17 Pro 512GB",
-            "value": "1,067,115 Rewards",
+            "key": "MacBook Pro 14-inch M5 chip with 10‑core CPU and 10‑core GPU 32GB - 1TB SSD - English keyboard",
+            "value": "From 1,980,576 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch SE 3 GPS 40mm Starlight Aluminium Case with Starlight Sport Band",
-            "value": "192,115 Rewards",
+            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - Arabic keyboard",
+            "value": "From 3,653,655 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 40‑core GPU 48GB - 2TB SSD - Arabic keyboard",
+            "value": "From 4,134,423 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 40‑core GPU 48GB - 2TB SSD - English keyboard",
+            "value": "From 4,134,423 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 1TB SSD - Arabic keyboard",
+            "value": "From 2,403,654 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 1TB SSD - English keyboard",
+            "value": "From 2,403,654 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 46mm Gold Titanium Case with Gold Milanese Loop",
-            "value": "615,193 Rewards",
+            "value": "From 615,193 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 46mm Jet Black Aluminium Case with Black Sport Band",
-            "value": "407,501 Rewards",
+            "value": "From 407,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS + Cellular 46mm Slate Titanium Case with Slate Milanese Loop",
-            "value": "615,193 Rewards",
+            "value": "From 615,193 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 42mm Silver Aluminium Case with Purple Fog Sport Band",
-            "value": "307,501 Rewards",
+            "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Series 11 GPS 46mm Silver Aluminium Case with Purple Fog Sport Band",
-            "value": "330,577 Rewards",
+            "value": "From 330,577 Rewards",
             "category": "",
             "detail": ""
           },
           {
             "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Light Blue Alpine Loop",
-            "value": "615,193 Rewards",
+            "value": "From 615,193 Rewards",
             "category": "",
             "detail": ""
           },
@@ -410,12 +488,108 @@
             "value": "1,249,807 Rewards",
             "category": "",
             "detail": ""
+          },
+          {
+            "key": "AirPods 4 with Active Noise Cancellation",
+            "value": "144,038 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "AirPods Pro 3",
+            "value": "182,501 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 256GB",
+            "value": "From 980,577 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone Air 512GB",
+            "value": "From 990,192 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 1TB",
+            "value": "From 1,307,500 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 2TB",
+            "value": "From 1,634,424 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 512GB",
+            "value": "From 1,067,115 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch SE 3 GPS 40mm Starlight Aluminium Case with Starlight Sport Band",
+            "value": "From 192,115 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,490,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - English keyboard",
+            "value": "From 1,490,193 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,470,961 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 512GB SSD - Arabic keyboard",
+            "value": "From 1,211,346 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - English keyboard",
+            "value": "From 2,019,039 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 14-inch M5 chip with 10‑core CPU and 10‑core GPU 32GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,980,576 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - English keyboard",
+            "value": "From 3,653,655 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 48GB - 1TB SSD - English keyboard",
+            "value": "From 2,922,885 Rewards",
+            "category": "",
+            "detail": ""
           }
         ],
-        "summary": "Extracted 62 products with names and prices, excluding accessories and AppleCare+ plans."
+        "summary": "Extracted 90 products with names and prices, excluding accessories and AppleCare+ plans."
       },
       "created": 1783504502,
-      "errors": 2
+      "errors": 0
     }
   ],
   "pending": null
