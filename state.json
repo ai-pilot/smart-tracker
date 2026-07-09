@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1783631040,
+      "last_run": 1783637397,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1783631092,
+      "last_run": 1783637433,
       "snapshot": {
         "items": [
           {
@@ -318,12 +318,6 @@
             "detail": ""
           },
           {
-            "key": "iPad Air 13-inch",
-            "value": "From 769,038 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "iPhone 16e 128GB",
             "value": "From 499,807 Rewards",
             "category": "",
@@ -426,18 +420,6 @@
             "detail": ""
           },
           {
-            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
-            "value": "From 1,317,116 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
-            "value": "From 1,317,116 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
             "value": "From 1,490,193 Rewards",
             "category": "",
@@ -468,10 +450,10 @@
             "detail": ""
           },
           {
-            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
             "value": "From 1,470,961 Rewards",
             "category": "",
-            "detail": "Name not present exactly; closest listed: 'MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard' at 1,470,961 Rewards"
+            "detail": ""
           },
           {
             "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
@@ -480,13 +462,13 @@
             "detail": ""
           },
           {
-            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - English keyboard",
-            "value": "From 1,644,038 Rewards",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "value": "From 1,470,961 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "MacBook Neo 13-inch A18 Pro chip with 6‑core CPU and 5‑core GPU 8GB - 256GB SSD - Arabic keyboard",
+            "key": "MacBook Neo 13-inch A18 Pro chip with Touch ID Touch ID 6‑core CPU and 5‑core GPU 8GB - 256GB SSD - Arabic keyboard",
             "value": "From 576,730 Rewards",
             "category": "",
             "detail": ""
@@ -516,12 +498,6 @@
             "detail": ""
           },
           {
-            "key": "MacBook Pro 14-inch M5 chip with 10‑core CPU and 10‑core GPU 32GB - 1TB SSD - English keyboard",
-            "value": "From 1,980,576 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - Arabic keyboard",
             "value": "From 2,019,039 Rewards",
             "category": "",
@@ -540,12 +516,6 @@
             "detail": ""
           },
           {
-            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 2TB SSD - Arabic keyboard",
-            "value": "From 2,451,730 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "MacBook Pro 14-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 2TB SSD - Arabic keyboard",
             "value": "From 2,634,424 Rewards",
             "category": "",
@@ -558,26 +528,8 @@
             "detail": ""
           },
           {
-            "key": "MacBook Pro 14-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - Arabic keyboard",
-            "value": "From 3,422,885 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 14-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - English keyboard",
-            "value": "From 3,422,885 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 1TB SSD - Arabic keyboard",
-            "value": "From 2,403,654 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 24GB - 1TB SSD - English keyboard",
-            "value": "From 2,403,654 Rewards",
+            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 48GB - 1TB SSD - Arabic keyboard",
+            "value": "From 2,922,885 Rewards",
             "category": "",
             "detail": ""
           },
@@ -588,32 +540,8 @@
             "detail": ""
           },
           {
-            "key": "MacBook Pro 16-inch M5 Pro chip with 18‑core CPU and 20‑core GPU 48GB - 1TB SSD - Arabic keyboard",
-            "value": "From 2,922,885 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - Arabic keyboard",
-            "value": "From 3,653,655 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - English keyboard",
             "value": "From 3,653,655 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 40‑core GPU 48GB - 2TB SSD - Arabic keyboard",
-            "value": "From 4,134,423 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 40‑core GPU 48GB - 2TB SSD - English keyboard",
-            "value": "From 4,134,423 Rewards",
             "category": "",
             "detail": ""
           },
@@ -636,7 +564,7 @@
             "detail": ""
           }
         ],
-        "summary": "Extracted 98 filtered Apple main-inventory items (excluded AppleCare+, chargers/cables, wallets, pencils, AirTag, and non-Watch cases/straps)."
+        "summary": "Extracted 85 filtered Apple inventory items (excluded AppleCare+, chargers/cables, wallets, pencils, AirTags, non-Watch cases/straps)."
       },
       "created": 1783504502,
       "errors": 0,
