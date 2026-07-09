@@ -31,7 +31,7 @@
         "summary": "Extracted 2 price items for 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English'."
       },
       "created": 1783456829,
-      "errors": 0
+      "errors": 1
     },
     {
       "id": 2,
@@ -643,7 +643,7 @@
         "summary": "Extracted 99 products with names and prices, excluding items containing 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', 'AirTag', or 'Case'/'Strap' not related to 'Watch'."
       },
       "created": 1783504502,
-      "errors": 2
+      "errors": 3
     }
   ],
   "pending": null
