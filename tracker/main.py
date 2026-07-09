@@ -4,9 +4,10 @@ import time
 import traceback
 
 from . import diff as diffmod
-from . import gemini, telegram_api
+from . import ai, telegram_api
 from .config import DEFAULT_INTERVAL_MIN, TRACKER_TYPES
 from .fetcher import fetch_page_text
+from .shorten import shorten_url
 from .store import get_tracker, load_state, new_tracker, save_state
 
 URL_RE = re.compile(r"https?://\S+")
@@ -24,6 +25,7 @@ The AI brain auto-picks the right tracker type.
 /remove &lt;id&gt; — delete a tracker
 /interval &lt;id&gt; &lt;minutes&gt; — change check interval
 /heartbeat &lt;id&gt; on|off — also message when nothing changed
+/removed &lt;id&gt; on|off — report items disappearing (default on)
 /type &lt;id&gt; &lt;type&gt; — force a tracker type
 /types — show the 10 tracker types
 /now — check everything right now
@@ -61,25 +63,27 @@ def handle_updates(state):
 
 def handle_command(state, text):
     lower = text.lower()
-    if lower.startswith("/start") or lower.startswith("/help"):
+    cmd = lower.split()[0] if lower.startswith("/") else ""
+    if cmd in ("/start", "/help"):
         notify(state, HELP)
-    elif lower.startswith("/types"):
+    elif cmd == "/types":
         lines = ["<b>Tracker types</b> (AI auto-picks; force with /type &lt;id&gt; &lt;key&gt;)"]
         lines += [f"• <code>{k}</code> — {v}" for k, v in TRACKER_TYPES.items()]
         notify(state, "\n".join(lines))
-    elif lower.startswith("/list"):
+    elif cmd == "/list":
         if not state["trackers"]:
             notify(state, "No trackers yet. Send me a link!")
         else:
             lines = ["<b>Your trackers</b>"]
             for t in state["trackers"]:
                 hb = " 💓" if t["heartbeat"] else ""
+                rm = "" if t.get("report_removed", True) else " 🚫removed"
                 lines.append(
                     f"#{t['id']} <b>{html.escape(t['name'] or '?')}</b> "
-                    f"[{t['type']}] every {t['interval_min']}m{hb}\n{html.escape(t['url'])}"
+                    f"[{t['type']}] every {t['interval_min']}m{hb}{rm}\n{html.escape(t['url'])}"
                 )
             notify(state, "\n\n".join(lines))
-    elif lower.startswith("/remove"):
+    elif cmd == "/remove":
         tid = _int_arg(text)
         t = get_tracker(state, tid)
         if t:
@@ -87,7 +91,7 @@ def handle_command(state, text):
             notify(state, f"🗑 Removed #{tid} {html.escape(t['name'] or '')}")
         else:
             notify(state, f"Tracker #{tid} not found.")
-    elif lower.startswith("/interval"):
+    elif cmd == "/interval":
         parts = text.split()
         tid = _int_arg(text)
         t = get_tracker(state, tid)
@@ -96,7 +100,7 @@ def handle_command(state, text):
             notify(state, f"⏱ #{tid} now checks every {t['interval_min']} min (30 min minimum — that's how often I wake up).")
         else:
             notify(state, "Usage: /interval <id> <minutes>")
-    elif lower.startswith("/heartbeat"):
+    elif cmd == "/heartbeat":
         parts = text.split()
         tid = _int_arg(text)
         t = get_tracker(state, tid)
@@ -105,7 +109,16 @@ def handle_command(state, text):
             notify(state, f"💓 Heartbeat for #{tid}: {parts[2].lower()}")
         else:
             notify(state, "Usage: /heartbeat <id> on|off")
-    elif lower.startswith("/type "):
+    elif cmd == "/removed":
+        parts = text.split()
+        tid = _int_arg(text)
+        t = get_tracker(state, tid)
+        if t and len(parts) >= 3 and parts[2].lower() in ("on", "off"):
+            t["report_removed"] = parts[2].lower() == "on"
+            notify(state, f"🗑 Report removed items for #{tid}: {parts[2].lower()}")
+        else:
+            notify(state, "Usage: /removed <id> on|off")
+    elif cmd == "/type":
         parts = text.split()
         tid = _int_arg(text)
         t = get_tracker(state, tid)
@@ -115,7 +128,7 @@ def handle_command(state, text):
             notify(state, f"🔧 #{tid} type set to {parts[2]}. Re-baselining on next run.")
         else:
             notify(state, f"Usage: /type <id> <{'|'.join(TRACKER_TYPES)}>")
-    elif lower.startswith("/now"):
+    elif cmd == "/now":
         for t in state["trackers"]:
             t["last_run"] = 0
         notify(state, "🏃 Checking all trackers now...")
@@ -145,18 +158,20 @@ def _int_arg(text):
 def create_tracker(state, url, purpose):
     notify(state, f"🧠 Analyzing {html.escape(url)} ...")
     page = fetch_page_text(url)
-    plan = gemini.classify(url, purpose, page)
+    plan = ai.classify(url, purpose, page)
     t = new_tracker(state, url, purpose)
     t["type"] = plan.get("type") if plan.get("type") in TRACKER_TYPES else "generic"
     t["name"] = plan.get("name") or url[:40]
     t["instructions"] = plan.get("instructions") or purpose or "track any change"
     t["interval_min"] = DEFAULT_INTERVAL_MIN
+    t["report_removed"] = plan.get("report_removed", True)
+    t["short_url"] = shorten_url(url)
     if plan.get("feasible") is False:
         notify(
             state,
             f"⚠️ #{t['id']}: {html.escape(plan.get('feasibility_note') or 'Page may be JS-only or blocked')} — I'll still try.",
         )
-    snap = gemini.extract(t, page)
+    snap = ai.extract(t, page)
     t["snapshot"] = snap
     t["last_run"] = int(time.time())
     notify(state, diffmod.format_full(t, snap))
@@ -167,9 +182,11 @@ def create_tracker(state, url, purpose):
 
 
 def run_tracker(state, t):
+    if not t.get("short_url"):
+        t["short_url"] = shorten_url(t["url"])
     try:
         page = fetch_page_text(t["url"])
-        snap = gemini.extract(t, page)
+        snap = ai.extract(t, page)
     except Exception as e:
         t["errors"] += 1
         if t["errors"] in (3, 10):
@@ -187,10 +204,11 @@ def run_tracker(state, t):
     added, removed, changed = diffmod.diff_snapshots(t["snapshot"], snap)
     if not snap.get("items") and t["snapshot"].get("items"):
         return
-    if added or removed or changed:
+    reported_removed = removed if t.get("report_removed", True) else []
+    if added or reported_removed or changed:
         notify(
             state,
-            diffmod.format_changes(t, added, removed, changed, snap.get("summary")),
+            diffmod.format_changes(t, added, reported_removed, changed, snap.get("summary")),
         )
         t["snapshot"] = snap
     elif t["heartbeat"]:

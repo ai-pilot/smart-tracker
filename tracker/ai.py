@@ -3,48 +3,42 @@ import re
 
 import requests
 
-from .config import GEMINI_API_KEY, GEMINI_MODEL, TRACKER_TYPES
+from .config import (
+    AZURE_OPENAI_API_VERSION,
+    AZURE_OPENAI_DEPLOYMENT,
+    AZURE_OPENAI_ENDPOINT,
+    AZURE_OPENAI_KEY,
+    TRACKER_TYPES,
+)
 
-ENDPOINTS = [
-    "https://generativelanguage.googleapis.com/v1beta/models/{model}:generateContent",
-    "https://aiplatform.googleapis.com/v1/publishers/google/models/{model}:generateContent",
-]
-
-_working_endpoint = None
+_URL = (
+    f"{AZURE_OPENAI_ENDPOINT}/openai/deployments/{AZURE_OPENAI_DEPLOYMENT}"
+    f"/chat/completions?api-version={AZURE_OPENAI_API_VERSION}"
+)
 
 
-def _call(prompt, json_mode=True):
-    global _working_endpoint
+def _call(prompt):
     body = {
-        "contents": [{"role": "user", "parts": [{"text": prompt}]}],
-        "generationConfig": {"temperature": 0.1},
+        "messages": [
+            {
+                "role": "system",
+                "content": "You are a precise data-extraction assistant. Always reply with valid JSON only, no prose, no markdown fences.",
+            },
+            {"role": "user", "content": prompt},
+        ],
+        "temperature": 0.1,
+        "response_format": {"type": "json_object"},
     }
-    if json_mode:
-        body["generationConfig"]["responseMimeType"] = "application/json"
-    endpoints = (
-        [_working_endpoint] if _working_endpoint else list(ENDPOINTS)
+    resp = requests.post(
+        _URL,
+        headers={"Content-Type": "application/json", "api-key": AZURE_OPENAI_KEY},
+        json=body,
+        timeout=120,
     )
-    last_err = None
-    for ep in endpoints:
-        url = ep.format(model=GEMINI_MODEL)
-        try:
-            resp = requests.post(
-                url,
-                headers={
-                    "Content-Type": "application/json",
-                    "x-goog-api-key": GEMINI_API_KEY,
-                },
-                json=body,
-                timeout=120,
-            )
-            if resp.status_code == 200:
-                _working_endpoint = ep
-                data = resp.json()
-                return data["candidates"][0]["content"]["parts"][0]["text"]
-            last_err = f"{resp.status_code}: {resp.text[:300]}"
-        except Exception as e:
-            last_err = str(e)
-    raise RuntimeError(f"Gemini call failed: {last_err}")
+    if resp.status_code != 200:
+        raise RuntimeError(f"Azure OpenAI call failed: {resp.status_code}: {resp.text[:400]}")
+    data = resp.json()
+    return data["choices"][0]["message"]["content"]
 
 
 def _parse_json(text):
@@ -76,8 +70,10 @@ Decide how to track this page. Reply with JSON only:
   "name": "<short human name for this tracker, max 6 words>",
   "instructions": "<precise instructions for a future extraction step: exactly what data to extract from this page each run so changes can be detected (e.g. 'extract every product with name, price, category; categorize Apple items into MacBook/iPhone/iPad/Watch/Accessories')>",
   "feasible": true/false,
-  "feasibility_note": "<if page looks empty/blocked/js-only, say so, else ''>"
-}}"""
+  "feasibility_note": "<if page looks empty/blocked/js-only, say so, else ''>",
+  "report_removed": true/false
+}}
+Set "report_removed" to false if the user's purpose implies they only care about new items appearing and/or price changes (e.g. "show only new additions and price changes"), not items disappearing. Default true otherwise."""
     return _parse_json(_call(prompt))
 
 
