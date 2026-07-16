@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784159829,
+      "last_run": 1784170485,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784159863,
+      "last_run": 1784170526,
       "snapshot": {
         "items": [
           {
@@ -126,13 +126,13 @@
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS 42mm Silver Aluminium Case with Purple Fog Sport Band",
+            "key": "Apple Watch Series 11 GPS 42mm Space Grey Aluminium Case with Black Sport Band",
             "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS 42mm Space Grey Aluminium Case with Black Sport Band",
+            "key": "Apple Watch Series 11 GPS 42mm Silver Aluminium Case with Purple Fog Sport Band",
             "value": "From 307,501 Rewards",
             "category": "",
             "detail": ""
@@ -258,12 +258,6 @@
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 46mm Space Grey Aluminium Case with Black Sport Band",
-            "value": "From 407,501 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Alpine Loop",
             "value": "From 615,193 Rewards",
             "category": "",
@@ -348,12 +342,6 @@
             "detail": ""
           },
           {
-            "key": "iPhone 17e",
-            "value": "From 499,808 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "iPhone 17 Pro 256GB",
             "value": "From 903,654 Rewards",
             "category": "",
@@ -392,6 +380,12 @@
           {
             "key": "iPhone 17 Pro Max 2TB",
             "value": "From 1,634,424 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17e",
+            "value": "From 499,808 Rewards",
             "category": "",
             "detail": ""
           },
@@ -468,10 +462,10 @@
             "detail": ""
           },
           {
-            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 10-core GPU 16GB - 1TB SSD - English keyboard",
             "value": "From 1,470,961 Rewards",
             "category": "",
-            "detail": ""
+            "detail": "Name appears as '10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard' on page"
           },
           {
             "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
@@ -522,13 +516,13 @@
             "detail": ""
           },
           {
-            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - Arabic keyboard",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - English keyboard",
             "value": "From 2,019,039 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - English keyboard",
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 1TB SSD - Arabic keyboard",
             "value": "From 2,019,039 Rewards",
             "category": "",
             "detail": ""
@@ -636,7 +630,7 @@
             "detail": ""
           }
         ],
-        "summary": "Extracted 100 filtered Apple products (excluded AppleCare+, chargers/cables, wallets, pencils, AirTags, non-Watch cases/straps) with prices in Rewards across pages 1-6."
+        "summary": "Extracted 97 filtered Apple main-inventory items (excluded AppleCare+, chargers/cables, wallets, pencils, AirTags, non-Watch cases/straps)."
       },
       "created": 1783504502,
       "errors": 0,
