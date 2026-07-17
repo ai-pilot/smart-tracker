@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784308310,
+      "last_run": 1784313217,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784308345,
+      "last_run": 1784313251,
       "snapshot": {
         "items": [
           {
@@ -138,14 +138,14 @@
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 42mm Natural Titanium Case with Stone Grey Sport Band",
-            "value": "From 538,269 Rewards",
+            "key": "Apple Watch Series 11 GPS + Cellular 42mm Natural Titanium Case with Slate Milanese Loop",
+            "value": "576,730 Rewards",
             "category": "",
             "detail": ""
           },
           {
-            "key": "Apple Watch Series 11 GPS + Cellular 42mm Rose Gold Aluminium Case with Light Blush Sport Band",
-            "value": "From 384,423 Rewards",
+            "key": "Apple Watch Series 11 GPS + Cellular 42mm Natural Titanium Case with Stone Grey Sport Band",
+            "value": "From 538,269 Rewards",
             "category": "",
             "detail": ""
           },
@@ -312,96 +312,6 @@
             "detail": ""
           },
           {
-            "key": "iPad Air 11-inch",
-            "value": "From 576,730 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 16e 128GB",
-            "value": "From 499,807 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 256GB",
-            "value": "From 653,653 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 512GB",
-            "value": "From 817,116 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 256GB",
-            "value": "From 903,654 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 512GB",
-            "value": "From 1,067,115 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 1TB",
-            "value": "From 1,230,578 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 256GB",
-            "value": "From 980,577 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 512GB",
-            "value": "From 1,144,038 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 1TB",
-            "value": "From 1,307,500 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 2TB",
-            "value": "From 1,634,424 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17e",
-            "value": "From 499,808 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone Air 256GB",
-            "value": "From 826,731 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone Air 512GB",
-            "value": "From 990,192 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "iPhone Air 1TB",
-            "value": "From 1,153,653 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
             "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 8‑core GPU 16GB - 512GB SSD - Arabic keyboard",
             "value": "From 1,057,499 Rewards",
             "category": "",
@@ -426,6 +336,18 @@
             "detail": ""
           },
           {
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
+            "value": "From 1,470,961 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - English keyboard",
+            "value": "From 1,470,961 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
             "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 512GB SSD - Arabic keyboard",
             "value": "From 1,211,346 Rewards",
             "category": "",
@@ -434,12 +356,6 @@
           {
             "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 512GB SSD - English keyboard",
             "value": "From 1,211,346 Rewards",
-            "category": "",
-            "detail": ""
-          },
-          {
-            "key": "MacBook Air 15-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
-            "value": "From 1,470,961 Rewards",
             "category": "",
             "detail": ""
           },
@@ -556,9 +472,99 @@
             "value": "1,249,807 Rewards",
             "category": "",
             "detail": ""
+          },
+          {
+            "key": "iPad Air 11-inch",
+            "value": "From 576,730 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 16e 128GB",
+            "value": "From 499,807 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 256GB",
+            "value": "From 653,653 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 512GB",
+            "value": "From 817,116 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 1TB",
+            "value": "From 1,230,578 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 256GB",
+            "value": "From 903,654 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 512GB",
+            "value": "From 1,067,115 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 1TB",
+            "value": "From 1,307,500 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 256GB",
+            "value": "From 980,577 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 2TB",
+            "value": "From 1,634,424 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 512GB",
+            "value": "From 1,144,038 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17e",
+            "value": "From 499,808 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone Air 1TB",
+            "value": "From 1,153,653 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone Air 256GB",
+            "value": "From 826,731 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
+            "key": "iPhone Air 512GB",
+            "value": "From 990,192 Rewards",
+            "category": "",
+            "detail": ""
           }
         ],
-        "summary": "Extracted 85 filtered Apple inventory items (excluded AppleCare+, Wallet, Pencil, AirTag, Case, Strap, Charger, Cable)."
+        "summary": "Extracted 86 filtered Apple inventory items (excluded AppleCare+, wallets, pencils, AirTags, cases/straps not for Watch, chargers/cables)."
       },
       "created": 1783504502,
       "errors": 0,
