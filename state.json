@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784414918,
+      "last_run": 1784418767,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1784414947,
+      "last_run": 1784418790,
       "snapshot": {
         "items": [
           {
@@ -426,6 +426,12 @@
             "detail": ""
           },
           {
+            "key": "MacBook Pro 14-inch M5 Pro chip with 15‑core CPU and 16‑core GPU 24GB - 2TB SSD - Arabic keyboard",
+            "value": "From 2,451,730 Rewards",
+            "category": "",
+            "detail": ""
+          },
+          {
             "key": "MacBook Pro 16-inch M5 Max chip with 18‑core CPU and 32‑core GPU 36GB - 2TB SSD - Arabic keyboard",
             "value": "From 3,653,655 Rewards",
             "category": "",
@@ -618,7 +624,7 @@
             "detail": ""
           }
         ],
-        "summary": "Extracted 94 filtered products (excluded AppleCare+, Wallet, Pencil, AirTag, Case non-Watch, Strap non-Watch, Charger/Cable); prices captured as Rewards (some 'From')."
+        "summary": "Extracted 96 filtered Apple main-inventory items (excluded AppleCare+, Wallet, Pencil, AirTag, Case, Strap/Crossbody Strap, Charger/Cable); prices captured in Rewards (some 'From')."
       },
       "created": 1783504502,
       "errors": 0,
