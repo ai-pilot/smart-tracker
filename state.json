@@ -525,7 +525,7 @@
         "summary": "Extracted 79 filtered Apple main-inventory products (excluded AppleCare+, Wallet, Pencil, AirTag, and other accessory keywords) with prices in Rewards across pages 1-5."
       },
       "created": 1783504502,
-      "errors": 1,
+      "errors": 2,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
