@@ -555,7 +555,7 @@
         "summary": "Extracted 85 filtered Apple main-inventory items (excluded AppleCare+, Wallet, Pencil, AirTag and other specified accessory terms); prices captured as listed (including 'From' where shown)."
       },
       "created": 1783504502,
-      "errors": 1,
+      "errors": 2,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
