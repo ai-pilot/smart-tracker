@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1787268308,
+      "last_run": 1787274816,
       "snapshot": {
         "items": [
           {
@@ -561,7 +561,7 @@
         "summary": "Extracted 85 products (name+price) after filtering out AppleCare+, Wallet, Pencil, AirTag, and other excluded accessory terms across pages 1-5."
       },
       "created": 1783504502,
-      "errors": 0,
+      "errors": 1,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
