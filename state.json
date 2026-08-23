@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1787498460,
+      "last_run": 1787503906,
       "snapshot": {
         "items": [
           {
@@ -555,7 +555,7 @@
         "summary": "Extracted 84 filtered Apple products with prices across 5 pages; excluded AppleCare+, Wallet, Pencil, and AirTag items per rules."
       },
       "created": 1783504502,
-      "errors": 1,
+      "errors": 0,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
