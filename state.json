@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1787693428,
+      "last_run": 1787696725,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1787693456,
+      "last_run": 1787696748,
       "snapshot": {
         "items": [
           {
@@ -182,6 +182,30 @@
           {
             "key": "Apple Watch Series 11 GPS 46mm Jet Black Aluminium Case with Black Sport Band",
             "value": "From 330,577 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Alpine Loop",
+            "value": "From 615,193 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black Titanium Milanese Loop",
+            "value": "From 692,116 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Black Titanium Case with Black/Charcoal Trail Loop",
+            "value": "From 615,193 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Blue/Bright Blue Trail Loop",
+            "value": "From 615,193 Rewards",
             "category": "Electronics",
             "detail": ""
           },
@@ -486,6 +510,12 @@
             "detail": ""
           },
           {
+            "key": "Apple Watch Ultra 3 GPS + Cellular 49mm Natural Titanium Case with Light Blue Alpine Loop",
+            "value": "From 615,193 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
             "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 24GB - 1TB SSD - Arabic keyboard",
             "value": "From 1,490,193 Rewards",
             "category": "Electronics",
@@ -522,7 +552,7 @@
             "detail": ""
           }
         ],
-        "summary": "Extracted 79 filtered Apple main-inventory items (excluded AppleCare+, Wallet, Pencil, AirTag, and non-Watch Case/Strap items); prices normalized as 'Rewards' with 'From' where shown."
+        "summary": "Extracted 84 filtered Apple electronics items (excluded AppleCare+, Wallet, Pencil, AirTag; and non-Watch Case/Strap rules did not remove additional items)."
       },
       "created": 1783504502,
       "errors": 0,
