@@ -25,7 +25,7 @@
         "summary": "Found 1 item with current price and list price."
       },
       "created": 1783456829,
-      "errors": 0,
+      "errors": 1,
       "short_url": "https://tinyurl.com/2dxhw5fp",
       "report_removed": true
     },
@@ -555,7 +555,7 @@
         "summary": "Extracted 85 filtered products (AppleCare+/accessories like Wallet, Pencil, AirTag excluded; no non-Watch cases/straps present in listings)."
       },
       "created": 1783504502,
-      "errors": 39,
+      "errors": 40,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
