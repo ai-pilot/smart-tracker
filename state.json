@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1794020478,
+      "last_run": 1794047628,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1794007457,
+      "last_run": 1794047652,
       "snapshot": {
         "items": [
           {
@@ -300,6 +300,18 @@
             "detail": ""
           },
           {
+            "key": "Mac mini: Apple M5 Pro chip with 15‑core CPU and 16‑core GPU - 24GB - 512GB SSD",
+            "value": "1,403,654 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "Mac Studio: Apple M5 Max chip with 18‑core CPU - 32‑core GPU - 36GB - 512GB",
+            "value": "2,019,039 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
             "key": "MacBook Air 13-inch M5 chip with 10‑core CPU and 10‑core GPU 16GB - 1TB SSD - Arabic keyboard",
             "value": "From 1,317,116 Rewards",
             "category": "Electronics",
@@ -342,12 +354,6 @@
             "detail": ""
           },
           {
-            "key": "MacBook Neo 13-inch A18 Pro chip with 6‑core CPU and 5‑core GPU 8GB - 256GB SSD - Arabic keyboard",
-            "value": "From 576,730 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
             "key": "MacBook Neo 13-inch A18 Pro chip with Touch ID Touch ID 6‑core CPU and 5‑core GPU 8GB - 512GB SSD - Arabic keyboard",
             "value": "From 672,884 Rewards",
             "category": "Electronics",
@@ -356,6 +362,12 @@
           {
             "key": "MacBook Neo 13-inch A18 Pro chip with Touch ID Touch ID 6‑core CPU and 5‑core GPU 8GB - 512GB SSD - English keyboard",
             "value": "From 672,884 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "MacBook Neo 13-inch A18 Pro chip with 6‑core CPU and 5‑core GPU 8GB - 256GB SSD - Arabic keyboard",
+            "value": "From 576,730 Rewards",
             "category": "Electronics",
             "detail": ""
           },
@@ -438,10 +450,10 @@
             "detail": ""
           }
         ],
-        "summary": "Extracted 66 filtered Apple products (excluded AppleCare+, Pencil, and other accessory keywords); prices normalized in Rewards."
+        "summary": "Found 68 products across 4 pages after filtering out AppleCare+ and excluded accessories (Case/Wallet/Pencil, etc.)."
       },
       "created": 1783504502,
-      "errors": 1,
+      "errors": 0,
       "short_url": "https://tinyurl.com/2xv5h6e2",
       "report_removed": true
     }
