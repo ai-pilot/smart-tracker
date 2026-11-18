@@ -12,7 +12,7 @@
       "instructions": "Extract the product name 'Apple 2025 MacBook Air (15-inch, Apple M4 chip with 10-core CPU and 10-core GPU, 24GB Unified Memory, 512GB) - Midnight;Arabic/English' and its current selling price 'AED 5,332.00'. Also, extract the 'List Price: AED 6,679.00' if available.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1794964082,
+      "last_run": 1794991976,
       "snapshot": {
         "items": [
           {
@@ -38,7 +38,7 @@
       "instructions": "Extract the name and price of every product listed on all pages. Filter these products by excluding any item where its name contains 'AppleCare+', 'Charger', 'Cable', 'Wallet', 'Pencil', or 'AirTag'. Also exclude items where the name contains 'Case' AND does not contain 'Watch', or where the name contains 'Strap' AND does not contain 'Watch'. Track new and removed items from this filtered list.",
       "interval_min": 30,
       "heartbeat": false,
-      "last_run": 1794964110,
+      "last_run": 1794992004,
       "snapshot": {
         "items": [
           {
@@ -61,25 +61,25 @@
           },
           {
             "key": "Apple Watch SE 3 GPS 40mm Midnight Aluminium Case with Navy Blue Sport Band",
-            "value": "From 192,115 Rewards",
+            "value": "192,115 Rewards",
             "category": "Electronics",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 40mm Starlight Aluminium Case with Sand Sport Band",
-            "value": "From 192,115 Rewards",
+            "value": "192,115 Rewards",
             "category": "Electronics",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 44mm Midnight Aluminium Case with Navy Blue Sport Band",
-            "value": "From 215,191 Rewards",
+            "value": "215,191 Rewards",
             "category": "Electronics",
             "detail": ""
           },
           {
             "key": "Apple Watch SE 3 GPS 44mm Starlight Aluminium Case with Sand Sport Band",
-            "value": "From 215,191 Rewards",
+            "value": "215,191 Rewards",
             "category": "Electronics",
             "detail": ""
           },
@@ -212,6 +212,84 @@
           {
             "key": "Apple Watch Ultra 4 GPS + Cellular 49mm Natural Titanium Case with Translucent Grey Ocean Band",
             "value": "615,193 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPad Air 11-inch",
+            "value": "From 576,730 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPad Air 13-inch",
+            "value": "From 769,038 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 256GB",
+            "value": "From 653,653 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 512GB",
+            "value": "From 817,116 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 1TB",
+            "value": "From 1,230,578 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 256GB",
+            "value": "From 903,654 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro 512GB",
+            "value": "From 1,067,115 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 1TB",
+            "value": "From 1,307,500 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 256GB",
+            "value": "From 980,577 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 2TB",
+            "value": "From 1,634,424 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17 Pro Max 512GB",
+            "value": "From 1,144,038 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone 17e",
+            "value": "From 499,808 Rewards",
+            "category": "Electronics",
+            "detail": ""
+          },
+          {
+            "key": "iPhone Air 256GB",
+            "value": "From 826,731 Rewards",
             "category": "Electronics",
             "detail": ""
           },
@@ -364,87 +442,9 @@
             "value": "1,461,346 Rewards",
             "category": "Electronics",
             "detail": ""
-          },
-          {
-            "key": "iPad Air 11-inch",
-            "value": "From 576,730 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPad Air 13-inch",
-            "value": "From 769,038 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 256GB",
-            "value": "From 653,653 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 512GB",
-            "value": "From 817,116 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 1TB",
-            "value": "From 1,230,578 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 256GB",
-            "value": "From 903,654 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro 512GB",
-            "value": "From 1,067,115 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 1TB",
-            "value": "From 1,307,500 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 256GB",
-            "value": "From 980,577 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 2TB",
-            "value": "From 1,634,424 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17 Pro Max 512GB",
-            "value": "From 1,144,038 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone 17e",
-            "value": "From 499,808 Rewards",
-            "category": "Electronics",
-            "detail": ""
-          },
-          {
-            "key": "iPhone Air 256GB",
-            "value": "From 826,731 Rewards",
-            "category": "Electronics",
-            "detail": ""
           }
         ],
-        "summary": "Extracted 65 filtered products with prices across 4 pages; excluded AppleCare+, cases (non-Watch), wallets, and pencils per rules."
+        "summary": "Extracted 69 filtered Apple inventory items (excluded AppleCare+, cases (non-Watch), wallets, pencils, etc.) across 4 pages."
       },
       "created": 1783504502,
       "errors": 0,
